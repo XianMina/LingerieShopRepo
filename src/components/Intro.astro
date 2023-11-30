@@ -1,0 +1,20 @@
+---
+import { ButtonReturn } from "./ButtonReturn";
+import { Image } from "astro:assets";
+import img3 from "../images/img3.jpg";
+---
+
+<section class="flex justify-center items-center mt-60 mb-52 gap-44">
+  <article class="flex flex-col gap-4 items-start">
+    <span class="text-gray-600">Lingerie Shop</span>
+    <h2 class="text-3xl">Lorem ipsum dolor sit amet</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Amet,
+      turpis suspendisse <br /> ut semper ipsum enim.
+    </p>
+    <ButtonReturn name="Shop" />
+  </article>
+  <article>
+    <Image class="h-auto" src={img3} alt="women" />
+  </article>
+</section>
