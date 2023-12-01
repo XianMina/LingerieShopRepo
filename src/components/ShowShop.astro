@@ -1,7 +1,6 @@
 ---
 import { ButtonReturn } from "./ButtonReturn";
 import img9 from "../images/img9.jpg";
-import { Picture } from "astro:assets";
 ---
 
 <section class="flex justify-center items-center gap-[9rem]">
@@ -15,6 +14,6 @@ import { Picture } from "astro:assets";
     <ButtonReturn name="Order now" />
   </article>
   <article>
-    <Picture src={img9} alt="Description" />
+    <img src={img9.src} alt="Description" />
   </article>
 </section>

@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import img4 from "../images/img4.jpg";
 import img5 from "../images/img5.jpg";
 import img6 from "../images/img6.jpg";
@@ -15,7 +14,7 @@ import img6 from "../images/img6.jpg";
   </article>
   <article class="flex gap-36">
     <div class="flex flex-col gap-6">
-      <Image src={img4} alt="women" />
+      <img src={img4.src} alt="women" />
       <h3 class="text-2xl">Lorem ipsum dolor <br /> sit amet</h3>
       <p class="text-gray-600">
         Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. <br />
@@ -23,7 +22,7 @@ import img6 from "../images/img6.jpg";
       </p>
     </div>
     <div class="flex flex-col gap-6">
-      <Image src={img5} alt="women" />
+      <img src={img5.src} alt="women" />
       <h3 class="text-2xl">Lorem ipsum dolor <br /> sit amet</h3>
       <p class="text-gray-600">
         Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. <br />
@@ -31,7 +30,7 @@ import img6 from "../images/img6.jpg";
       </p>
     </div>
     <div class="flex flex-col gap-6">
-      <Image src={img6} alt="women" />
+      <img src={img6.src} alt="women" />
       <h3 class="text-2xl">Lorem ipsum dolor <br /> sit amet</h3>
       <p class="text-gray-600">
         Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. <br />
