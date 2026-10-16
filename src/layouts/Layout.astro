@@ -5,15 +5,34 @@ interface Props {
 }
 
 const { title, meta } = Astro.props;
-import '../styles/global.css';
+import "../styles/global.css";
+
+import { AstroFont } from "astro-font";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <AstroFont
+      config={[
+        {
+          name: "Rozha_One",
+          src: [
+            {
+              style: "normal",
+              weight: "400",
+              path: "./src/styles/Fonts/Rozha_One/RozhaOne-Regular.ttf",
+            },
+          ],
+          preload: true,
+          display: "swap",
+          selector: "body",
+          fallback: "sans-serif",
+        },
+      ]}
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name={meta} content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -21,4 +40,3 @@ import '../styles/global.css';
     <slot />
   </body>
 </html>
-
