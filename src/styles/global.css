@@ -1,3 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@utility nav-primary {
+    @apply bg-[#d1c7e6];
+}
+
+@utility font-rozha {
+    @apply font-[--rozha]
+}

@@ -12,30 +12,47 @@ import { AstroFont } from "astro-font";
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <AstroFont
-      config={[
-        {
-          name: "Rozha_One",
-          src: [
-            {
-              style: "normal",
-              weight: "400",
-              path: "./src/styles/Fonts/Rozha_One/RozhaOne-Regular.ttf",
-            },
-          ],
-          preload: true,
-          display: "swap",
-          selector: "body",
-          fallback: "sans-serif",
-        },
-      ]}
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name={meta} content={Astro.generator} />
-    <title>{title}</title>
-  </head>
+  <AstroFont
+    config={[
+      {
+        name: "Rosarivo",
+        src: [
+          {
+            style: "normal",
+            weight: "400",
+            // Picked up font URL by manually visiting Google Fonts URL
+            path: "./src/styles/Fonts/Rosarviro/Rosarivo-Regular.ttf",
+          },
+        ],
+        preload: true,
+        display: "swap",
+        selector: "body",
+        fallback: "sans-serif",
+      },
+      {
+        name: "Rozha_One",
+        src: [
+          {
+            style: "bold",
+            weight: "400",
+            // Picked up font URL by manually visiting Google Fonts URL
+            path: "./src/styles/Fonts/Rosarviro/Rozha_One.ttf",
+          },
+        ],
+        preload: true,
+        display: "swap",
+        selector: "body > span",
+        fallback: "sans-serif",
+        cssVariable: "rozha",
+      },
+    ]}
+  />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name={meta} content={Astro.generator} />
+  <title>{title}</title>
+
   <body>
     <slot />
   </body>
