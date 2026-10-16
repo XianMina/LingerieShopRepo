@@ -1,16 +1,18 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import { Astronav } from "astro-navbar";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home" meta="Home">
-  <Navbar>
-    <h1 class="text-3xl">Youth</h1>
-    <ul class="flex gap-x-10 uppercase">
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contacts</li>
-    </ul>
-  </Navbar>
+  <Astronav>
+    <div>
+      <h1 class="text-3xl">Youth</h1>
+      <ul class="flex gap-x-10 uppercase">
+        <li>Home</li>
+        <li>About</li>
+        <li>Products</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+  </Astronav>
 </Layout>
