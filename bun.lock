@@ -12,6 +12,7 @@
         "astro": "^7.4.0",
         "astro-font": "^1.2.0",
         "astro-navbar": "^2.4.0",
+        "daisyui": "^5.7.50",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-responsive": "^10.0.1",
@@ -687,6 +688,8 @@
     "csstype": ["csstype@3.2.3", "", {}, "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ=="],
 
     "cwd": ["cwd@0.10.0", "", { "dependencies": { "find-pkg": "^0.1.2", "fs-exists-sync": "^0.1.0" } }, "sha512-YGZxdTTL9lmLkCUTpg4j0zQ7IhRB5ZmqNBbGCl3Tg6MP/d5/6sY7L5mmTjzbc6JKgVZYiqTQTNhPFsbXNGlRaA=="],
+
+    "daisyui": ["daisyui@5.7.50", "", {}, "sha512-+/LRqnTCoc7s/bJEKKwtJSwzeXCVdAmRdNmZeZzgHCaQ9PJyl7j+2V2U32GQDMyD+VDkP9e/+JGoC72Y1hLk7w=="],
 
     "data-store": ["data-store@0.16.1", "", { "dependencies": { "cache-base": "^0.8.4", "clone-deep": "^0.2.4", "debug": "^2.2.0", "define-property": "^0.2.5", "extend-shallow": "^2.0.1", "graceful-fs": "^4.1.4", "has-own-deep": "^0.1.4", "lazy-cache": "^2.0.1", "mkdirp": "^0.5.1", "project-name": "^0.2.5", "resolve-dir": "^0.1.0", "rimraf": "^2.5.3", "union-value": "^0.2.3" } }, "sha512-tGbl4oVi9UPysie6y6+fuCjUNhaR3KxnuIRV0OMUCwq/wvikmWHXQYALbW/IVQvmxBNbrxUwjG5BWsrjx5v55w=="],
 

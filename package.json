@@ -16,6 +16,7 @@
     "astro": "^7.4.0",
     "astro-font": "^1.2.0",
     "astro-navbar": "^2.4.0",
+    "daisyui": "^5.7.50",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-responsive": "^10.0.1",
