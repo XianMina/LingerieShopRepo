@@ -1,10 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@utility nav-primary {
+@utility color-primary {
     @apply bg-[#d1c7e6];
+}
+
+@utility color-secundary {
+    @apply bg-[#ded6ed];
 }
 
 @utility font-rozha {
     @apply font-[--rozha]
+}
+
+@utility text-violet {
+    @apply text-[#6743AC]
+}
+
+@utility text-lavander-bond {
+    @apply text-[#6743AC4D]
 }
