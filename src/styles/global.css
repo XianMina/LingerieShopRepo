@@ -9,6 +9,10 @@
     @apply font-[--font-rosarivo]
 }
 
+@utility font-rokkitt {
+    @apply font-[--font-rokkitt]
+}
+
 @plugin "daisyui/theme" {
     name: "Rose";
     default: true;
