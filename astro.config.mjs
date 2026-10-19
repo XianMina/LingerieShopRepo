@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -12,6 +12,22 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
+
+  fonts: [{
+    provider: fontProviders.google(),
+    name: 'Rosarivo',
+    cssVariable: '--font-rosarivo',
+  },
+  {
+    provider: fontProviders.google(),
+    name: 'Rokkitt',
+    cssVariable: '--font-rokkitt'
+  },
+  {
+    provider: fontProviders.google(),
+    name: 'Rozha One',
+    cssVariable: '--font-rozha'
+  }],
 
   integrations: [react(), favicons()],
 

@@ -1,5 +1,6 @@
 ---
 import { Astronav, MenuItems } from "astro-navbar";
+import { ItemLink } from "./ItemLink";
 ---
 
 <Astronav>
@@ -9,12 +10,12 @@ import { Astronav, MenuItems } from "astro-navbar";
         <h1 class="text-violet text-3xl font-semibold font-rozha uppercase">
             Youth
         </h1>
-        <MenuItems class="flex gap-x-10 uppercase list-none">
-            <ul class="flex gap-x-5 uppercase">
-                <li>Home</li>
-                <li>About</li>
-                <li>Products</li>
-                <li>Contacts</li>
+        <MenuItems class="flex gap-x-10 list-none">
+            <ul class="flex gap-x-10 uppercase font-rosarivo">
+                <ItemLink url="/">Home</ItemLink>
+                <ItemLink url="/">About</ItemLink>
+                <ItemLink url="/">Products</ItemLink>
+                <ItemLink url="/">Contacts</ItemLink>
             </ul>
         </MenuItems>
     </div>

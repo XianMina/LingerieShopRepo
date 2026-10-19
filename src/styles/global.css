@@ -1,22 +1,45 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@utility color-primary {
-    @apply bg-[#d1c7e6];
-}
-
-@utility color-secundary {
-    @apply bg-[#ded6ed];
-}
-
 @utility font-rozha {
-    @apply font-[--rozha]
+    @apply font-[--font-rozha]
 }
 
-@utility text-violet {
-    @apply text-[#6743AC]
+@utility font-rosarivo {
+    @apply font-[--font-rosarivo]
 }
 
-@utility text-lavander-bond {
-    @apply text-[#6743AC4D]
+@plugin "daisyui/theme" {
+    name: "Rose";
+    default: true;
+    prefersdark: true;
+    color-scheme: "light";
+    --color-base-100: #DED6ED;
+    --color-base-200: #D1C7E6;
+    --color-base-300: #C1B1DA;
+    --color-base-content: #2D2438;
+    --color-primary: #6743AC;
+    --color-primary-content: oklch(93% 0.034 272.788);
+    --color-secondary: #A64670;
+    --color-secondary-content: oklch(94% 0.028 342.258);
+    --color-accent: #5BC7B5;
+    --color-accent-content: oklch(38% 0.063 188.416);
+    --color-neutral: #2D2438;
+    --color-neutral-content: oklch(92% 0.004 286.32);
+    --color-info: #2563EB;
+    --color-info-content: #FFFFFF;
+    --color-success: #15803D;
+    --color-success-content: #FFFFFF;
+    --color-warning: #FACC15;
+    --color-warning-content: #2D2438;
+    --color-error: #B91C1C;
+    --color-error-content: #FFFFFF;
+    --radius-selector: 0.5rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
 }
