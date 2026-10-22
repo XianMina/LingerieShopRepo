@@ -27,6 +27,11 @@ export default defineConfig({
     provider: fontProviders.google(),
     name: 'Rozha One',
     cssVariable: '--font-rozha'
+  },
+  {
+    provider: fontProviders.google(),
+    name: 'Roboto',
+    cssVariable: '--roboto'
   }],
 
   integrations: [react(), favicons()],

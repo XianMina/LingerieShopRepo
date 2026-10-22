@@ -13,6 +13,10 @@
     @apply font-[--font-rokkitt]
 }
 
+@utility font-roboto {
+    @apply font-[--font-roboto]
+}
+
 @plugin "daisyui/theme" {
     name: "Rose";
     default: true;
