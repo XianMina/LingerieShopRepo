@@ -1,20 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@utility font-rozha {
-    @apply font-[--font-rozha]
-}
-
-@utility font-rosarivo {
-    @apply font-[--font-rosarivo]
-}
-
-@utility font-rokkitt {
-    @apply font-[--font-rokkitt]
-}
-
-@utility font-roboto {
-    @apply font-[--font-roboto]
+@theme inline {
+    --font-rokkitt: var(--font-rokkitt);
+    --font-rosarivo: var(--font-rosarivo);
+    --font-rozha: var(--font-rozha);
 }
 
 @plugin "daisyui/theme" {

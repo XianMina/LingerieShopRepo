@@ -21,17 +21,15 @@ export default defineConfig({
   {
     provider: fontProviders.google(),
     name: 'Rokkitt',
-    cssVariable: '--font-rokkitt'
+    fallbacks: ['serif'],
+    cssVariable: '--font-rokkitt',
+    styles: ['normal'],
+    weights: ['400']
   },
   {
     provider: fontProviders.google(),
     name: 'Rozha One',
     cssVariable: '--font-rozha'
-  },
-  {
-    provider: fontProviders.google(),
-    name: 'Roboto',
-    cssVariable: '--roboto'
   }],
 
   integrations: [react(), favicons()],

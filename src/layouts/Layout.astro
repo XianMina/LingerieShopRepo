@@ -5,6 +5,7 @@ interface Props {
 }
 
 const { title, meta } = Astro.props;
+import { Font } from "astro:assets";
 import "../styles/global.css";
 ---
 
@@ -13,6 +14,9 @@ import "../styles/global.css";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name={meta} content={Astro.generator} />
+  <Font cssVariable="--font-rosarivo" preload />
+  <Font cssVariable="--font-rokkitt" preload />
+  <Font cssVariable="--font-rozha" preload />
   <title>{title}</title>
   <body>
     <slot />

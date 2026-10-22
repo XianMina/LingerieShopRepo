@@ -1,3 +1,4 @@
-export interface ButtonsProps {
+export interface ButtonProps {
     name: string
+    function: void
 }
